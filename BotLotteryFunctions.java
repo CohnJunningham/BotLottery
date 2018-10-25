@@ -93,7 +93,7 @@ public class BotLotteryFunctions
         //try block to quote the winning tweet, like the winning tweet, follow the winner, and handle Twitter exception
         try {
             //first line is for testing, next 3 are the methods for winner announcement
-            //twitter.sendDirectMessage(432215520, mention + quoteLink);
+            //twitter.sendDirectMessage(*********, mention + quoteLink);
             twitter.updateStatus(mention + quoteLink);
             twitter.createFriendship(winner.getUser().getId());
             twitter.createFavorite(winner.getId());
